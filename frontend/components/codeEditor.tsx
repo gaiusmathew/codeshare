@@ -2,8 +2,9 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import '@uiw/react-textarea-code-editor/dist.css';
 import ShareModal from './shareModal';
+import { TextareaCodeEditorProps } from '@uiw/react-textarea-code-editor';
 
-const CodeEditor = dynamic(
+const CodeEditor = dynamic<TextareaCodeEditorProps>(
     () => import('@uiw/react-textarea-code-editor').then(mod => mod.default),
     { ssr: false }
 );
@@ -21,7 +22,7 @@ function Editor() {
                         value={code}
                         language='js'
                         placeholder='Write or paste code here and share. Anyone you share with will see code as it is being typed!'
-                        onChange={evn => setCode(evn.target.value)}
+                        onChange={(evn: any) => setCode(evn.target.value)}
                         padding={15}
                         className='h-[85vh]'
                         style={{
