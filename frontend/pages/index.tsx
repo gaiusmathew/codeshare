@@ -4,8 +4,11 @@ import Image from 'next/image';
 import Editor from '../components/codeEditor';
 import Header from '../components/Header';
 import NavBar from '../components/navbar';
+import { useRouter } from 'next/router';
 
 const Home: NextPage = () => {
+    const router = useRouter();
+    console.log('query', router.query);
     return (
         <div>
             <Head>

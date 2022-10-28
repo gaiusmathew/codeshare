@@ -1,6 +1,7 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import '@uiw/react-textarea-code-editor/dist.css';
+import ShareModal from './shareModal';
 
 const CodeEditor = dynamic(
     () => import('@uiw/react-textarea-code-editor').then(mod => mod.default),
@@ -15,6 +16,7 @@ function Editor() {
         <main>
             <div className='mx-auto py-6 sm:px-6 lg:px-8 h-full'>
                 <div>
+                    <ShareModal isOpen={true}></ShareModal>
                     <CodeEditor
                         value={code}
                         language='js'
