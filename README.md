@@ -42,7 +42,7 @@ To set up a development environment, please follow these steps:
     Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Screenshots
-![Dev Music Dashboard](https://github.com/gaiusmathew/devMusic/blob/main/src/assets/dev-music.png)
+![Dev Music Dashboard](https://github.com/gaiusmathew/codeshare/blob/main/public/images/code-share.png)
 
 
 ## Issues
