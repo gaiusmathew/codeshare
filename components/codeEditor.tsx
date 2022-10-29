@@ -17,7 +17,7 @@ function Editor() {
         <main>
             <div className='mx-auto py-6 sm:px-6 lg:px-8 h-full'>
                 <div>
-                    <ShareModal isOpen={true}></ShareModal>
+                    <ShareModal isOpen={false}></ShareModal>
                     <CodeEditor
                         value={code}
                         language='js'
